@@ -50,12 +50,12 @@
         </header>
     
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <label for="validationCustom01" class="form-label">Nome Autore</label>
               <input type="text" class="form-control text-body-secondary" id="validationCustom01" value="Inserisci il nome dell'autore" required>
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <label for="validationCustom02" class="form-label">Cognome Autore</label>
               <input type="text" class="form-control text-body-secondary" id="validationCustom02" value="Inserisci il cognome dell'autore" required>
             </div>
@@ -67,44 +67,45 @@
               </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <label for="validationCustom04" class="form-label">Genere</label>
               <select class="form-select" id="validationCustom04" required>
                 <option class="text-dark" selected disabled value="">Scegli il genere</option>
-                <option>Maschio</option>
-                <option>Femmina</option>
+                <option>Commedia</option>
+                <option>Romanzo</option>
+                <option>Horror</option>
+                <option>Thriller</option>
               </select>
             </div>
-
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
                 <label for="validationCustom03" class="form-label">Anno di pubblicazione</label>
                 <input type="text" class="form-control text-body-secondary" id="validationCustom03" value="Inserisci l'anno" required>
               </div>
             <div class="col-md-4">
               <label for="validationCustom05" class="form-label">ISBN#</label>
               <input type="text" class="form-control text-body-secondary" id="validationCustom05" value="Inserisci il codice ISBN#"  required>
+            </div>
 
-              <div class="container-fluid full-width-separator col-12">
+            <div class="container-fluid mt-4">
                 <div class="border-top my-4"></div>
-              </div>
-              
+            </div>
 
+            <div class=" col-md-12 mt-3">
+                <label for="validationTextarea" class="form-label">Note</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Inserisci eventuali note sul libro" required></textarea>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                <label class="form-check-label" for="validationFormCheck1">Disponibile anche in digitale</label>
+                <div class="invalid-feedback">Example invalid feedback text</div>
               </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
+
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Aggiungi Libro</button>
+              </div>
+
+        </form>
     </main>
 </body>
 </html>
